@@ -1,0 +1,30 @@
+site_name: TorX Layers
+site_description: Thermodynamics-aware stochastic layers for Extropic TorX
+repo_url: https://github.com/albertbuchard/torx-layers
+repo_name: albertbuchard/torx-layers
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Concepts:
+      - Architecture: concepts/architecture.md
+      - Stochastic and energy semantics: concepts/stochastic-and-energy-semantics.md
+      - Thermodynamic compilation: concepts/thermodynamic-compilation.md
+  - API: api/index.md
+  - Examples: examples/index.md
+  - Roadmap: roadmap.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences

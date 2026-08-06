@@ -1,0 +1,33 @@
+name: Feature proposal
+description: Propose a stochastic layer, compiler, diagnostic, or testing capability.
+title: "[Proposal]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and user value
+      description: Explain the concrete modelling or compiler problem.
+    validations:
+      required: true
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Stochastic semantics
+      description: Define inputs, outputs, conditional kernel or structural operation, parameters, and temperature or sampler conventions.
+    validations:
+      required: true
+  - type: textarea
+    id: lowering
+    attributes:
+      label: Lowering and physical implications
+      description: Describe expected TorX factors or gates, support conflicts, scheduling, target constraints, approximation, and fallbacks.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Acceptance evidence
+      description: State the structural, distributional, gradient, equivariance, or target evidence that should establish correctness.
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: TorX upstream
+    url: https://github.com/extropic-ai/torx
+    about: Report issues in TorX itself to the upstream project.

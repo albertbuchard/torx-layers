@@ -1,0 +1,35 @@
+name: Bug report
+description: Report incorrect behaviour in an implemented TorX Layers feature.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: TorX Layers is currently a scaffold. Please report only observable repository or implemented behaviour.
+  - type: input
+    id: version
+    attributes:
+      label: TorX Layers version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Observed behaviour
+      description: Include the smallest reproducible example and complete error output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: State the documented stochastic or compiler contract you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Python, TorX, JAX, operating system, and target versions when relevant.
+    validations:
+      required: true
